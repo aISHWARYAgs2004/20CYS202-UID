@@ -1,0 +1,243 @@
+<html>
+
+<head>
+<title>
+Anokha_Registeration
+</title>
+<link rel="icon" type="image/x-icon" href="https://img.icons8.com/material-outlined/512/application-form.png">
+</head>
+
+<style>
+body {
+  background-image: url('https://media.istockphoto.com/id/1217216449/photo/green-jade-light-teal-mint-ombre-grunge-stone-background-abstract-putty-marble-texture-close.jpg?s=170667a&w=0&k=20&c=sWR1cO01dnSFQiqPwIjyybDlBjIP-ls0yH_lNC9EKxI=');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+.gen {
+  width: 700px;
+  margin: auto;
+  border: 3px solid Black;
+  border-radius: 50px;
+  padding-top: 30px;
+  padding-right: 300px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  background-color: White;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  top: 2px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.button {
+  border: none;
+  color: White;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: Teal;}
+
+</style>
+
+<header>
+<header style="color:White;background-color:Teal;font-size:30px;">
+<center>
+<h1 style="text-align:center;background-color:Teal;font-family:'Papyrus';color:White;"><i>
+Anokha Registeration 2023
+</i></h1>
+</center></header>
+
+
+<div class="gen">
+<form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+<fieldset style = "width: 940px; margin: auto; font-size:20px">
+<legend>Details</legend>
+<p>
+<label>Name
+<input type="text" name="student_name" placeholder="Firstname Lastname" onchange="NameCheck()" required>
+</label> 
+</p>
+
+<p>
+<label>Department</label>
+  <select id="department" name="Department">
+    <option value="Cyber">Cyber</option>
+    <option value="CSE">CSE</option>
+    <option value="AI">AI</option>
+    <option value="Data Science">Data Science</option>
+    <option value="EEE">EEE</option>
+    <option value="Mechanical">Mechanical</option>
+    <option value="Civil">Civil</option>
+    <option value="ARE">ARE</option>
+  </select>
+</p>
+
+<p>
+<label>Roll number &nbsp &nbsp
+<input type="number" name="student_number" min="1" max="95" required>
+</label> 
+</p>
+
+<p>
+<label>Phone 
+<input type="tel" name="phone_number">
+</label>
+</p>
+
+<p>
+<label>Email 
+<input type="email" name="email_address" placeholder="abc123@xyz.com">
+</label>
+</p>
+
+<p>
+<label>Date of Birth
+<input type="date" name="time" required>
+</label>
+</p>
+</fieldset>
+	
+<br>
+
+<fieldset style = "width: 940px; margin: auto;font-size:20px">
+<legend>Events</legend>
+<p><label> <input type="radio" name="events" required value="Code wars"> Code wars </label></p>
+<p><label> <input type="radio" name="events" required value="Poly code glot"> Poly code glot </label></p>
+<p><label> <input type="radio" name="events" required value="Figure em all"> Figure em all </label></p>
+<p><label> <input type="radio" name="events" required value="AI ADEPT"> AI ADEPT </label></p>
+<p><label> <input type="radio" name="events" required value="Six Siege"> Six Siege </label></p>
+</fieldset>
+
+<br>
+
+<fieldset style = "width: 940px; margin: auto;font-size:20px">
+<legend>Workshops</legend>
+<p><label> <input type="checkbox" name="ws" value="Data Science"> Data Science </label></p>
+<p><label> <input type="checkbox" name="ws" value="Python"> Python </label></p>
+<p><label> <input type="checkbox" name="ws" value="LabView"> LabView </label></p>
+<p><label> <input type="checkbox" name="ws" value="Spectron"> Spectron </label></p>
+<p><label> <input type="checkbox" name="ws" value="Quantum Computing"> Quantum Computing </label></p>
+<p><label> <input type="checkbox" name="ws" value="Winning Hacks made Easier"> Winning Hacks made Easier </label></p>
+<p><label> <input type="checkbox" name="ws" value="IoT"> IoT </label></p>
+</fieldset>
+
+<br>
+
+<label style="font-size:20px">Upload scanned ID <br>
+<input type="file" id="myFile" name="filename">
+</label>
+
+<br>
+<br>
+
+<legend style="font-size:20px"> Do you want to recieve emails regarding anokha? </legend>
+<label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label><br>
+
+<p>
+<label style="font-size:20px">Requests</label><br><br>
+<textarea name="message" rows="10" cols="30">Type your requests here</textarea>
+</p>
+
+<br>
+
+<a href="notice.html"><button class="button button1">SUBMIT RESPONSE</button></a>
+
+</div>
+</form>
+
+<script>
+      function NameCheck() {
+    var x = document.getElementById("fname").value;
+    var y = x.split("")
+    let sp = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~'];
+    var arrLen = sp.length;
+    for (var i = 0; i < arrLen; i++) {
+        if (y.includes(sp[i])) {
+            alert("Special charater present in Fisrt Name please remove it")
+        }
+    }
+
+
+}
+    </script>
+<br>
+<br>
+
+<center><a href="index.html"><button class="button button1">Back Home</button></a></center><br>
+
+<footer style="text-align:center;color:White;background-color:Teal;font-size:20px;"><div class="gen3">
+©Copyright**<br>
+Aishwarya GS<br>
+Amrita Vishwa Vidyapeetham<br>
+Tifac Cyber Security<br>
+</footer></div>
+
+<html>
