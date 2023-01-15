@@ -1,0 +1,232 @@
+<!--
+Authors:  Aishwarya GS
+Created Date:  17 Dec 2022
+Updated Date: 07 Jan 2023
+Base Template:  None
+Description: Anokha TechFest Gallery
+-->
+
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <title>
+    Anokha_Gallery
+  </title>
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/external-flatart-icons-outline-flatarticons/512/external-laptop-devices-flatart-icons-outline-flatarticons-1.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style>
+
+body {
+  background-image: url('https://media.istockphoto.com/id/1217216449/photo/green-jade-light-teal-mint-ombre-grunge-stone-background-abstract-putty-marble-texture-close.jpg?s=170667a&w=0&k=20&c=sWR1cO01dnSFQiqPwIjyybDlBjIP-ls0yH_lNC9EKxI=');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+
+t {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+
+.gen {
+  width: 1000px;
+  margin: auto;
+  border: 3px solid Teal;
+  border-radius: 50px;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+}
+.gen2 {
+  width: 700px;
+  margin: auto;
+  border: 1px ;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+.gen3 {
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.button {
+  border: none;
+  color: White;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: SolidWhite;
+}
+
+li a {
+  display: block;
+  color: Black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li {
+  float: left;
+}
+
+li a:hover {
+  background-color: #66CDAA;
+}
+
+.button1 {background-color: Teal;}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+:root {
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	
+	flex: 1 0 24rem;
+	
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+
+</style>
+
+<ul style="font-size:26px">
+  <li><img src="https://dt19wmazj2dns.cloudfront.net/wp-content/themes/amrita/images/logo-colored.svg" ></li>
+  <li style="float:right"><a href="contact.html">Contact</a></li>
+  <li style="float:right"><a href="https://www.amrita.edu/news-all/">News</a></li>
+  <li style="float:right"><a href="https://intranet.cb.amrita.edu/">Intranet</a></li>
+  <li style="float:right"><a href="gallery.html">Gallery</a></li>
+  <li style="float:right"><a href="anokha.html">Home</a></li>
+</ul>
+
+<header>
+  <header style="color:White;background-color:Teal;font-size:30px;">
+  <center>
+    <h1 style="text-align:center;background-color:Teal;font-family:'Papyrus';color:White;"><i>
+      Anokha TechFest Gallery
+    </i></h1>
+  </center>
+</header>
+
+<body>
+
+<div class="container">
+            <hr>
+        
+            <div class="gallery">
+        
+                <div class="gallery-item">
+                    <img class="gallery-image" src="http://amrita.edu/wp-content/uploads/2019/02/anokha-2019-techfest30.jpg">
+                </div>
+        
+                <div class="gallery-item">
+                    <img class="gallery-image" src="http://amrita.edu/wp-content/uploads/2018/02/anokha20185.jpg">
+                </div>
+        
+                <div class="gallery-item">
+                    <img class="gallery-image" src="http://amrita.edu/wp-content/uploads/2019/02/anokha-2019-techfest10.jpg" >
+                </div>
+        
+                <div class="gallery-item">
+                    <img class="gallery-image" src="https://i.ytimg.com/vi/F6wAlwklTCQ/maxresdefault.jpg" >
+                </div>
+        
+                <div class="gallery-item">
+                    <img class="gallery-image" src="http://amrita.edu/wp-content/uploads/2019/02/anokha-2019-techfest14.jpg">
+                </div>
+        
+                <div class="gallery-item">
+                    <img class="gallery-image" src="http://amrita.edu/wp-content/uploads/2018/02/anokha20181.jpg">
+                </div>
+        
+            </div>
+        
+        </div>
+
+
+<footer style="text-align:center;color:White;background-color:Teal;font-size:20px;">
+  <div class="gen3">
+    Copyright © Aishwarya GS<br>
+    II B.Tech CSE(CYS)<br>
+    Part of 20CYS202 - User Interface Design<br>
+    Amrita Vishwa Vidyapeetham, Coimbatore<br>
+</footer>
+</body>
+</html>
