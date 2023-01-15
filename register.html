@@ -11,10 +11,10 @@ Description: Anokha TechFest Registration Page
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
-<title>
-Anokha_Registeration
-</title>
-<link rel="icon" type="image/x-icon" href="https://img.icons8.com/material-outlined/512/application-form.png">
+	<title>
+		Anokha_Registeration
+	</title>
+	<link rel="icon" type="image/x-icon" href="https://img.icons8.com/material-outlined/512/application-form.png">
 </head>
 
 <style>
@@ -115,113 +115,118 @@ input:checked + .slider:before {
 
 <header>
 <header style="color:White;background-color:Teal;font-size:30px;">
-<center>
-<h1 style="text-align:center;background-color:Teal;font-family:'Papyrus';color:White;"><i>
-Anokha Registration 2023
-</i></h1>
-</center></header>
+	<center>
+		<h1 style="text-align:center;background-color:Teal;font-family:'Papyrus';color:White;">
+			<i>
+				Anokha Registration 2023
+			</i>
+		</h1>
+	</center>
+</header>
 
 
 <div class="gen">
-<form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+	<form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
 
-<fieldset style = "width: 940px; margin: auto; font-size:20px">
-<legend>Details</legend>
-<p>
-<label>Name
-<input type="text" name="student_name" placeholder="Firstname Lastname" id="name" onchange="validateName()" required>
-</label> 
-</p>
+		<fieldset style = "width: 940px; margin: auto; font-size:20px">
+			<legend>Details</legend>
+				<p>
+					<label>Name
+						<input type="text" name="student_name" placeholder="Firstname Lastname" id="name" onchange="validateName()" required>
+					</label> 
+				</p>
 
-<p>
-<label>Department</label>
-  <select id="department" name="Department">
-    <option value="Select">Select</option>
-    <option value="Cyber">Cyber</option>
-    <option value="CSE">CSE</option>
-    <option value="AI">AI</option>
-    <option value="Data Science">Data Science</option>
-    <option value="EEE">EEE</option>
-    <option value="Mechanical">Mechanical</option>
-    <option value="Civil">Civil</option>
-    <option value="ARE">ARE</option>
-  </select>
-</p>
+				<p>
+					<label>Department</label>
+  					<select id="department" name="Department">
+    						<option value="Select">Select</option>
+    						<option value="Cyber">Cyber</option>
+    						<option value="CSE">CSE</option>
+    						<option value="AI">AI</option>
+    						<option value="Data Science">Data Science</option>
+    						<option value="EEE">EEE</option>
+    						<option value="Mechanical">Mechanical</option>
+    						<option value="Civil">Civil</option>
+    						<option value="ARE">ARE</option>
+  					</select>
+				</p>
 
-<p>
-<label>Roll number &nbsp &nbsp
-<input type="number" name="student_number" min="1" max="95" required>
-</label> 
-</p>
+				<p>
+					<label>Roll number &nbsp &nbsp
+						<input type="number" name="student_number" min="1" max="95" required>
+					</label> 
+				</p>
 
-<p>
-<label>Phone 
-<input type="tel" name="phone_number" id="phone" onchange="validatePhoneno()" required>
-</label>
-</p>
+				<p>
+					<label>Phone 
+						<input type="tel" name="phone_number" id="phone" onchange="validatePhoneno()" required>
+					</label>
+				</p>
 
-<p>
-<label>Email 
-<input type="email" name="email_address" placeholder="abc123@xyz.com" id="email" onchange="validateEmail()" required>
-</label>
-</p>
+				<p>
+					<label>Email 
+						<input type="email" name="email_address" placeholder="abc123@xyz.com" id="email" onchange="validateEmail()" required>
+					</label>
+				</p>
 
-<p>
-<label>Date of Birth
-<input type="date" name="time" required>
-</label>
-</p>
-</fieldset>
+				<p>
+					<label>Date of Birth
+						<input type="date" name="time" required>
+					</label>
+				</p>
+		</fieldset>
 	
 <br>
 
-<fieldset style = "width: 940px; margin: auto;font-size:20px">
-<legend>Events</legend>
-<p><label> <input type="radio" name="events" required value="Code wars"> Code wars </label></p>
-<p><label> <input type="radio" name="events" required value="Poly code glot"> Poly code glot </label></p>
-<p><label> <input type="radio" name="events" required value="Figure em all"> Figure em all </label></p>
-<p><label> <input type="radio" name="events" required value="AI ADEPT"> AI ADEPT </label></p>
-<p><label> <input type="radio" name="events" required value="Six Siege"> Six Siege </label></p>
-</fieldset>
+		<fieldset style = "width: 940px; margin: auto;font-size:20px">
+			<legend>Events</legend>
+				<p><label> <input type="radio" name="events" required value="Code wars"> Code wars </label></p>
+				<p><label> <input type="radio" name="events" required value="Poly code glot"> Poly code glot </label></p>
+				<p><label> <input type="radio" name="events" required value="Figure em all"> Figure em all </label></p>
+				<p><label> <input type="radio" name="events" required value="AI ADEPT"> AI ADEPT </label></p>
+				<p><label> <input type="radio" name="events" required value="Six Siege"> Six Siege </label></p>
+		</fieldset>
 
 <br>
 
-<fieldset style = "width: 940px; margin: auto;font-size:20px">
-<legend>Workshops</legend>
-<p><label> <input type="checkbox" name="ws" value="Data Science"> Data Science </label></p>
-<p><label> <input type="checkbox" name="ws" value="Python"> Python </label></p>
-<p><label> <input type="checkbox" name="ws" value="LabView"> LabView </label></p>
-<p><label> <input type="checkbox" name="ws" value="Spectron"> Spectron </label></p>
-<p><label> <input type="checkbox" name="ws" value="Quantum Computing"> Quantum Computing </label></p>
-<p><label> <input type="checkbox" name="ws" value="Winning Hacks made Easier"> Winning Hacks made Easier </label></p>
-<p><label> <input type="checkbox" name="ws" value="IoT"> IoT </label></p>
-</fieldset>
+		<fieldset style = "width: 940px; margin: auto;font-size:20px">
+			<legend>Workshops</legend>
+				<p><label> <input type="checkbox" name="ws" value="Data Science"> Data Science </label></p>
+				<p><label> <input type="checkbox" name="ws" value="Python"> Python </label></p>
+				<p><label> <input type="checkbox" name="ws" value="LabView"> LabView </label></p>
+				<p><label> <input type="checkbox" name="ws" value="Spectron"> Spectron </label></p>
+				<p><label> <input type="checkbox" name="ws" value="Quantum Computing"> Quantum Computing </label></p>
+				<p><label> <input type="checkbox" name="ws" value="Winning Hacks made Easier"> Winning Hacks made Easier </label></p>
+				<p><label> <input type="checkbox" name="ws" value="IoT"> IoT </label></p>
+		</fieldset>
 
 <br>
 
-<label style="font-size:20px">Upload scanned ID <br>
-<input type="file" id="myFile" name="filename">
-</label>
+		<label style="font-size:20px">Upload scanned ID <br>
+			<input type="file" id="myFile" name="filename">
+		</label>
 
 <br>
 <br>
 
-<legend style="font-size:20px"> Do you want to recieve emails regarding anokha? </legend>
-<label class="switch">
-  <input type="checkbox" checked>
-  <span class="slider round"></span>
-</label><br>
+		<legend style="font-size:20px">
+			Do you want to recieve emails regarding anokha? 
+		</legend>
+		<label class="switch">
+  			<input type="checkbox" checked>
+  			<span class="slider round"></span>
+		</label><br>
 
-<p>
-<label style="font-size:20px">Requests</label><br><br>
-<textarea name="message" rows="10" cols="70"></textarea>
-</p>
+		<p>
+			<label style="font-size:20px">Requests</label><br><br>
+			<textarea name="message" rows="10" cols="70"></textarea>
+		</p>
 
 <br>
 
-<a href="notice.html"><button class="button button1">Submit Response</button></a>
+		<a href="notice.html"><button class="button button1">Submit Response</button></a>
 
-</div>
+	</div>
 </form>
 
 <br>
